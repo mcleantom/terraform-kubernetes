@@ -33,3 +33,8 @@ export SERVICE_IP=$(kubectl get svc --namespace default hello-world --template "
 echo $SERVICE_IP
 curl $SERVICE_IP
 ```
+
+You can then destroy the infrastructure:
+```
+terraform destroy
+```
